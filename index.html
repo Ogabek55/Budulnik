@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budilnik</title>
+    <style>
+      .alarm-active {
+        background-color: blue;
+
+        color: whitesmoke;
+        animation: backgroundAnimation 0.5s infinite alternate;
+      }
+      @keyframes backgroundAnimation {
+        50% {
+          background-color: red;
+        }
+        100% {
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Budilnik o'rnatish</h2>
+    <form id="alarmForm">
+      <label for="alarmTime">Budilnik vaqti:</label>
+      <input type="time" id="alarmTime" name="alarmTime" />
+      <button type="submit">O'rnatish</button>
+    </form>
+    <audio id="alarmAudio" src="./Classic_Nitrogen_(_Bass_Music)_.mp3"></audio>
+    <script src="jav.js"></script>
+  </body>
+</html>
